@@ -6,6 +6,7 @@ Bike sharing systems
 
 ### Description
 exploring data related to bike share systems in NY, WA, CH
+provided info: popular times to travel,popular stations, trip duration
 ### Files used
 python file, washington.csv, new_york_city.csv
 
