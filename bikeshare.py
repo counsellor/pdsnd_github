@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+#explores data about bike sharing systems in CH,NY and WA
 import calendar
 import string
 import time
