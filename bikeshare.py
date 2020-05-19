@@ -132,7 +132,7 @@ def time_stats(df):
     start_time = time.time()
 
     print("Most common start month... ", end='')
-    # Month has small cardinality [1-12], no need to use uniq, bincount is
+    # Month has small cardinality [1-12], no need to use unique, bincount is
     # good enough.
     hist = np.bincount(df[START_DATE_LABEL].dt.month)
     print("%s (%d travels)" % (calendar.month_name[hist.argmax()], hist.max()))
@@ -172,7 +172,7 @@ def station_stats(df):
     most_common_station(df['End Station'], 'End Station')
 
     print('Most commonly used combination of start station and end station...')
-    # We need to count by two columns, so groupby is necessary.
+    # We need to count by two columns, so group by is necessary.
     counts = df.groupby(['Start Station', 'End Station']).size()
     top_itinerary = counts.index[counts.values.argmax()]
     print('"%s" -> "%s" (%d trips)' % (top_itinerary[0], top_itinerary[1],
