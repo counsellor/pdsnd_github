@@ -6,13 +6,13 @@ import time
 import pandas as pd
 import numpy as np
 
-CITY_DATA = { 'chicago': 'chicago.csv',
+ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-VALID_MONTHS = [calendar.month_name[i].lower() for i in range(1, 7)]
-VALID_DAYS = [d.lower() for d in calendar.day_name]
-START_DATE_LABEL = 'Start Time'
+ VALID_MONTHS = [calendar.month_name[i].lower() for i in range(1, 7)]
+ VALID_DAYS = [d.lower() for d in calendar.day_name]
+ START_DATE_LABEL = 'Start Time'
 
 def get_input(question, valid_inputs):
     """
