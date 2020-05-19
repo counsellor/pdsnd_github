@@ -25,7 +25,7 @@ def get_input(question, valid_inputs):
     Returns:
         (str) answer - The validated answer.
     """
-    # Make sure that valid inputs are in lower case.
+    # Setting lower case.
     answers = set([v.lower() for v in valid_inputs])
     # Make sure that valid inputs for display are in word capitalized.
     pp_valid_inputs = [string.capwords(v.lower()) for v in valid_inputs]
